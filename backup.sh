@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BACKUPTIME= 'date +%b-%d-%y'
+BackupTime = `date +%b-%d-%y`
 
 Destination = /home/ec2-user/backup-$BackupTime.tar.gz
 
