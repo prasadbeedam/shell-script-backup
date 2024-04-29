@@ -1,6 +1,6 @@
 #!/bin/bash
 
-backup_files="/home/ec2-user/shell-script-backup"
+backup_files="/home/ec2-user/test1"
 
 dest="/home/ec2-user/shell-script-backup/backup"
 
