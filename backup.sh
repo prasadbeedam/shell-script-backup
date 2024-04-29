@@ -1,10 +1,19 @@
 #!/bin/bash
 
-BackupTime = `date +%b-%d-%y`
+backup_files="/home/ec2-user/shell-script-backup"
 
-Destination = /home/ec2-user/backup-$BackupTime.tar.gz
+dest="/home/ec2-user/shell-script-backup/backup"
 
+day=$(date +%A)
+hostname=$(hostname -s)
+archive_file="$hostname-$day.tgz"
 
-Source = /home/ec2-user/shell-script-backup
+echo "Backing up $backup_files to $dest/$archive_file"
+date
+echo
 
-tar –cpzf $Destination $Source
+tar czf $dest/$archive_file $backup_files
+
+echo
+echo "Backup finished"
+date
