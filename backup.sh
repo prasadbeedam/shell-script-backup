@@ -2,7 +2,7 @@
 
 backup_files="/home/ec2-user/test1"
 
-dest="/home/ec2-user/shell-script-backup/backup"
+dest="/home/ec2-user/"
 
 day=$(date +%A)
 hostname=$(hostname -s)
