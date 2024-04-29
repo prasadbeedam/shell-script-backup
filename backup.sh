@@ -2,9 +2,9 @@
 
 BACKUPTIME= "date +%b-%d-%y"
 
-Destination = /home/usr/path/backup-$BackupTime.tar.gz
+Destination = /home/ec2-user/backup-$BackupTime.tar.gz
 
 
-Source = /home/usr/path/folder
+Source = /home/ec2-user/shell-script-backup
 
 tar –cpzf $Destination $Source
